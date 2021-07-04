@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.content {
+    position: relative;
+}
+.content h2{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    font-size: 12em;
+    color: white;
+    -webkit-font-smoothing: auto;
+}
+.content h2:nth-child(2){
+    color: #03a9f4;
+    animation: animate 3s ease-in-out infinite;
+}
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+        clip-path: polygon(0% 31%, 8% 41%, 17% 48%, 24% 55%, 32% 60%, 41% 66%, 53% 73%, 65% 75%, 76% 75%, 86% 71%, 93% 64%, 100% 58%, 100% 98%, 1% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%, 9% 66%, 18% 70%, 29% 72%, 40% 70%, 56% 66%, 64% 58%, 75% 54%, 89% 50%, 99% 48%, 100% 99%, 0% 99%);
+    }
+
+}
